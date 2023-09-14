@@ -60,16 +60,19 @@ li {
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff; 
 }
 
 .container {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 input[type="text"] {
@@ -80,17 +83,29 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: skyblue;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: lightblue
 }
 
 #weatherInfo {
     margin-top: 20px;
     display: none;
 }
+
+img {
+    content: "";
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 400px; 
+    height: 250px; 
+    margin: 0 auto 20px;
+}
+ 
